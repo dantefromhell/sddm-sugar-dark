@@ -60,7 +60,7 @@ Column {
                 contentItem: Text {
                     text: model.realName != "" ? model.realName : model.name
                     font.pointSize: root.font.pointSize * 0.8
-                    font.capitalization: Font.Capitalize
+                    font.capitalization: Font.AllLowercase
                     color: selectUser.highlightedIndex === index ? "#444" : root.palette.highlight
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
