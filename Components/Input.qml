@@ -264,6 +264,9 @@ Column {
         width: parent.width / 2
         anchors.horizontalCenter: parent.horizontalCenter
 
+        // Showing passwords is super-insecure, naughty, naughty, naughty
+        visible: false
+
         CheckBox {
             id: revealSecret
             width: parent.width
