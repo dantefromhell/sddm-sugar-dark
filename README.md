@@ -1,6 +1,7 @@
 ## Changes from upstream
 - [x] Removed capitalization of username capitalization
 - [x] Removed "Show password" checkbox
+- [x] Added "Hybrid Sleep" button
 
 
 ![Screenshot of the interface of the Sugar Dark theme for SDDM](Previews/Mockup.jpg "The default interface of the Sugar Dark theme for SDDM")
