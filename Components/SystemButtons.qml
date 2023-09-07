@@ -35,7 +35,7 @@ RowLayout {
 
     Repeater {
 
-        model: [suspend, hibernate, reboot, shutdown]
+        model: [suspend, hibernate, hybridsleep, reboot, shutdown]
 
         RoundButton {
             id: icon
