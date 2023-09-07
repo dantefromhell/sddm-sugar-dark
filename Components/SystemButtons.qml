@@ -27,7 +27,7 @@ RowLayout {
 
     property var suspend: ["Suspend", config.TranslateSuspend || textConstants.suspend, sddm.canSuspend]
     property var hibernate: ["Hibernate", config.TranslateHibernate || textConstants.hibernate, sddm.canHibernate]
-    property var hybridsleep: ["Hybrid Sleep", config.TranslateHybridsleep || textConstants.hybridsleep, sddm.canHybridSleep]
+    property var hybridsleep: ["HybridSleep", config.TranslateHybridsleep || textConstants.hybridsleep, sddm.canHybridSleep]
     property var reboot: ["Reboot", config.TranslateReboot || textConstants.reboot, sddm.canReboot]
     property var shutdown: ["Shutdown", config.TranslateShutdown || textConstants.shutdown, sddm.canPowerOff]
 
