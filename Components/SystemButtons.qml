@@ -27,6 +27,7 @@ RowLayout {
 
     property var suspend: ["Suspend", config.TranslateSuspend || textConstants.suspend, sddm.canSuspend]
     property var hibernate: ["Hibernate", config.TranslateHibernate || textConstants.hibernate, sddm.canHibernate]
+    property var hybridsleep: ["Hybrid Sleep", config.TranslateHybridsleep || textConstants.hybridsleep, sddm.canHybridSleep]
     property var reboot: ["Reboot", config.TranslateReboot || textConstants.reboot, sddm.canReboot]
     property var shutdown: ["Shutdown", config.TranslateShutdown || textConstants.shutdown, sddm.canPowerOff]
 
@@ -59,7 +60,7 @@ RowLayout {
             Keys.onReturnPressed: clicked()
             onClicked: {
                 parent.forceActiveFocus()
-                index == 0 ? sddm.suspend() : index == 1 ? sddm.hibernate() : index == 2 ? sddm.reboot() : sddm.powerOff()
+                index == 0 ? sddm.suspend() : index == 1 ? sddm.hibernate() : index == 2 ? sddm.hybridSleep(): index == 3 ?reboot() : sddm.powerOff()
             }
             KeyNavigation.up: exposedLogin
             KeyNavigation.left: index == 0 ? exposedLogin : parent.children[index-1]
