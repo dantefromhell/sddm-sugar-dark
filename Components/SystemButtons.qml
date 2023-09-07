@@ -60,7 +60,7 @@ RowLayout {
             Keys.onReturnPressed: clicked()
             onClicked: {
                 parent.forceActiveFocus()
-                index == 0 ? sddm.suspend() : index == 1 ? sddm.hibernate() : index == 2 ? sddm.hybridSleep(): index == 3 ?reboot() : sddm.powerOff()
+                index == 0 ? sddm.suspend() : index == 1 ? sddm.hibernate() : index == 2 ? sddm.hybridSleep(): index == 3 ? sddm.reboot() : sddm.powerOff()
             }
             KeyNavigation.up: exposedLogin
             KeyNavigation.left: index == 0 ? exposedLogin : parent.children[index-1]
